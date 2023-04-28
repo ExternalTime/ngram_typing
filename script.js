@@ -23,7 +23,7 @@ document.addEventListener("keydown", function(e) {
   let t0 = time.shift();
   let res = time.map(x => x - t0);
   time.length = 0;
-  if (max_bigram_speed * (target.length - 1) < time.at(-1))
+  if (max_bigram_speed * (target.length - 1) < res.at(-1))
     return;
   if (!times.has(target))
     times.set(target, []);

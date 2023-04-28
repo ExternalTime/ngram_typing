@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Ngram typing speed test</title>
+<style>
+html {
+  background-color: #1b1b1b;
+  color: #ffffff;
+}
+</style>
+
+<div style="display: flex; flex-direction: column; align-items: center">
+  <p id="status">Load test to get started</p>
+  <p id="last_keypress">_</p>
+  <p id="last_time">_</p>
+  <div style="flex-direction: row">
+    <button onclick="import_test()">custom test</button>
+    <button onclick="bigrams()">bigram test</button>
+    <button onclick="export_data()">export stats</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
